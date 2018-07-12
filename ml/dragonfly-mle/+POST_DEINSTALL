@@ -1,0 +1,6 @@
+# clean up dragonfly-mle plugin resources
+rm -rf /usr/local/etc/rc.d/dragonfly-mle
+mv /usr/local/etc/rc.d/dragonfly-mle.backup /usr/local/etc/rc.d/dragonfly-mle
+
+# restart configd to unload plugin actions
+service configd restart
