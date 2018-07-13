@@ -1,6 +1,0 @@
-# clean up redis plugin resources
-rm -rf /usr/local/etc/rc.d/redis
-mv /usr/local/etc/rc.d/redis.backup /usr/local/etc/rc.d/redis
-
-# restart configd to unload plugin actions
-service configd restart

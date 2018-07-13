@@ -1,8 +1,0 @@
-# backup default
-cp /usr/local/etc/rc.d/dragonfly-mle /usr/local/etc/rc.d/dragonfly-mle.backup
-
-# reconfigure daemon file
-sed -i -r 's/dragonflymle_enable="NO"/dragonflymle_enable="YES"/' /usr/local/etc/rc.d/dragonfly-mle
-
-# restart configd to unload plugin actions
-service configd restart
