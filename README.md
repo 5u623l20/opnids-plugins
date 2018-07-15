@@ -1,4 +1,4 @@
-About the OPids plugins
+About the OPNids plugins
 ==========================
 
 The plugins collection offers users and developers a way to quickly
