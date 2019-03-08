@@ -114,8 +114,8 @@ scripts: check scripts-pre scripts-auto scripts-manual scripts-post
 scripts-pre:
 	@for SCRIPT in ${PLUGIN_SCRIPTS}; do \
 		rm -f ${DESTDIR}/$${SCRIPT}; \
-		if [ -f ${.CURDIR}/$${SCRIPT}.pre ]; then \
-			cp ${.CURDIR}/$${SCRIPT}.pre ${DESTDIR}/$${SCRIPT}; \
+		if [ -f ${.CURDIR}/$${SCRIPT} ]; then \
+			cp ${.CURDIR}/$${SCRIPT} ${DESTDIR}/$${SCRIPT}; \
 		fi; \
 	done
 
@@ -169,8 +169,8 @@ scripts-manual:
 
 scripts-post:
 	@for SCRIPT in ${PLUGIN_SCRIPTS}; do \
-		if [ -f ${.CURDIR}/$${SCRIPT}.post ]; then \
-			cat ${.CURDIR}/$${SCRIPT}.post >> ${DESTDIR}/$${SCRIPT}; \
+		if [ -f ${.CURDIR}/$${SCRIPT} ]; then \
+			cat ${.CURDIR}/$${SCRIPT} >> ${DESTDIR}/$${SCRIPT}; \
 		fi; \
 	done
 
