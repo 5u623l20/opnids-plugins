@@ -1,0 +1,9 @@
+[submodule "misc/pkg-opnids-theme"]
+	path = misc/pkg-opnids-theme
+	url = https://github.com/opnids/pkg-opnids-theme
+[submodule "misc/pkg-mle-plugin"]
+	path = misc/pkg-mle-plugin
+	url = https://github.com/opnids/pkg-mle-plugin
+[submodule "misc/pkg-filebeat-plugin"]
+	path = misc/pkg-filebeat-plugin
+	url = https://github.com/opnids/pkg-filebeat-plugin
